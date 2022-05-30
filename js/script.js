@@ -1,10 +1,10 @@
 //variable list for parallax carousel
-let imagesCarousel = ['../images/umbreon.jpg' , '../images/mewtwo.jpg' , '../images/scizor.jpg' , '../images/starters.jpg'];
+let imagesCarousel = ['../images/carousel/umbreon.jpg' , '../images/carousel/mewtwo.jpg' , '../images/carousel/scizor.jpg' , '../images/carousel/starters.jpg'];
 let carousel = document.getElementById('carouselContainer');
 let activeImg = 0;
 // getting the images in
 carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`
-carousel.style.backgroundRepeat = `no-repeat`
+carousel.style.backgroundRepeat = 'no-repeat'
 carousel.style.backgroundSize = 'cover';
 carousel.style.backgroundAttachment = 'fixed';
 setInterval(carouselScroll,2000)
@@ -18,9 +18,40 @@ function carouselScroll(){
 
     }
 }
+/*
+//hover popups
+//pidgeot
+document.getElementById('pidgeot').addEventListener('mouseover', function (){
+    document.querySelector("#pidgeotPopup").style.display = "block";
+})
 
+document.getElementById('pidgeot').addEventListener('mouseleave', function (){
+    document.getElementById('pidgeotPopup').style.display = 'none';
+})
+//magikarp
+document.getElementById('magikarp').addEventListener('mouseover', function (){
+    document.getElementById('magikarpPopup').style.display = "block";
+})
 
+document.getElementById('magikarp').addEventListener('mouseleave', function (){
+    document.getElementById('magikarpPopup').style.display = 'none';
+})
+//slowpoke
+document.getElementById('slowpoke').addEventListener('mouseover', function (){
+    document.getElementById('slowpokePopup').style.display = 'block';
+})
 
+document.getElementById('slowpoke').addEventListener('mouseleave', function (){
+    document.getElementById('slowpokePopup').style.display = 'none';
+})
+//farfetch'd
+document.getElementById('farfetch').addEventListener('mouseover', function (){
+    document.getElementById('farfetchPopup').style.display = 'block';
+})
+
+document.getElementById('farfetch').addEventListener('mouseleave', function (){
+    document.getElementById('farfetchPopup').style.display = 'none';
+})*/
 //random letters
 Array.from(document.querySelectorAll(".letter")).forEach(el => {
    el.innerText = randomLetter();

@@ -1,4 +1,6 @@
+
 # Title: Advanced-JS-Interactions
+Check the [page](https://glinchflash.github.io/advanced-interactions/) out here!
 
 - Repository: `Advanced-JS-Interactions`
 - Type of Challenge: `Learning Challenge`
@@ -30,6 +32,7 @@ Go check out the HTML file! Everything you need to know is there!
    * - [x] make parallax
    * - [x] make carousel
    * - [x] combine parallax and carousel
+   * - [ ] optional: Controls
 
 2. A collage with popup for more details
     * - [ ] get images for collage
@@ -37,7 +40,7 @@ Go check out the HTML file! Everything you need to know is there!
     * - [ ] make popups with more details
 
 3. Hover image above every Pokemon in the text
-    * - [ ] get images for pokemon
+    * - [x] get images for pokemon
     * - [ ] make hover effect
     * - [ ] implement images in hover effect
 
