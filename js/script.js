@@ -41,8 +41,9 @@ for (let i = 0; i < collage.length; i++) {
     })
     collage[i].appendChild(img);
 }
-/*
+
 //hover popups
+
 //pidgeot
 document.getElementById('pidgeot').addEventListener('mouseover', function (){
     document.querySelector("#pidgeotPopup").style.display = "block";
@@ -74,7 +75,7 @@ document.getElementById('farfetch').addEventListener('mouseover', function (){
 
 document.getElementById('farfetch').addEventListener('mouseleave', function (){
     document.getElementById('farfetchPopup').style.display = 'none';
-})*/
+})
 
 //chaser
 
