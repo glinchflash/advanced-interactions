@@ -18,6 +18,27 @@ function carouselScroll(){
 
     }
 }
+//collage
+const collage = document.getElementsByClassName("image");
+for (let i = 0; i<collage.length; i++){
+    const img = document.createElement("img");
+    let click = false;
+    img.src = `../images/collage/${i+1}.png`;
+    img.addEventListener('click', function (){
+        this.style.transform = "scale(1.2)";
+        document.getElementById(`${i+1}`).style.display = "block";
+        document.getElementById(`${i+1}`).style.position = "absolute";
+        document.getElementById(`${i+1}`).style.zIndex = "200";
+        document.getElementById(`${i+1}`).style.backgroundColor = "black";
+        if (!click){
+            this.addEventListener('mouseout', function (){
+                this.style.transform = "scale(1)";
+                document.getElementById(`${i+1}`).style.display = "none";
+            })
+        }
+    })
+    collage[i].appendChild(img);
+}
 /*
 //hover popups
 //pidgeot

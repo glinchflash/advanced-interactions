@@ -27,17 +27,17 @@ Go check out the HTML file! Everything you need to know is there!
 
 ### Must-have features
 
-1. A parallax carousel
+1. - [x]  A parallax carousel
    * - [x] get images
    * - [x] make parallax
    * - [x] make carousel
    * - [x] combine parallax and carousel
    * - [ ] optional: Controls
 
-2. A collage with popup for more details
-    * - [ ] get images for collage
-    * - [ ] implement images for collage
-    * - [ ] make popups with more details
+2. - [x]  A collage with popup for more details
+    * - [x] get images for collage
+    * - [x] implement images for collage
+    * - [x] make popups with more details
 
 3. Hover image above every Pokemon in the text
     * - [x] get images for pokemon
