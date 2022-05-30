@@ -45,9 +45,10 @@ Go check out the HTML file! Everything you need to know is there!
     * - [ ] implement images in hover effect
 
 4. Functional chaser or runner circle
-    * - [ ] write JS for chaser/runner (or both)
-    * - [ ] implement in the page
-    * - [ ] testing
+    * - [x] write JS for chaser/runner (or both)
+      * - [x] chaser
+    * - [x] implement in the page
+    * - [x] testing
 ---
 #### Nice-to-have features progress
 

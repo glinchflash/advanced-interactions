@@ -6,9 +6,6 @@ body{
     padding: 10px;
 }
 
-.image{
-    height: 250px
-}
 
 .poke{
     font-weight: bold;
@@ -38,6 +35,7 @@ p {
     height: 50px;
     background: red;
     border-radius: 50%;
+    position: absolute;
 }
 
 .runner{
@@ -60,12 +58,7 @@ p {
     position: relative;
     overflow:hidden;
 }
-.img{
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
+
 .title{
     font-size: 1.5em;
     margin-top: 100px;
