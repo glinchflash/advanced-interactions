@@ -21,4 +21,28 @@ Go check out the HTML file! Everything you need to know is there!
 - Chaser AND runner circle are functional
 - Lightmode / Darkmode switch
 - Final letter challenge completed!
+---
 
+### Must-have features
+
+1. A parallax carousel
+   * - [ ] get images
+   * - [ ] make parallax
+   * - [ ] make carousel
+   * - [ ] combine parallax and carousel
+
+2. A collage with popup for more details
+    * - [ ] get images for collage
+    * - [ ] implement images for collage
+    * - [ ] make popups with more details
+
+3. Hover image above every Pokemon in the text
+    * - [ ] get images for pokemon
+    * - [ ] make hover effect
+    * - [ ] implement images in hover effect
+
+4. Functional chaser or runner circle
+    * - [ ] write JS for chaser/runner (or both)
+    * - [ ] implement in the page
+    * - [ ] testing
+---
