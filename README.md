@@ -26,10 +26,10 @@ Go check out the HTML file! Everything you need to know is there!
 ### Must-have features
 
 1. A parallax carousel
-   * - [ ] get images
-   * - [ ] make parallax
-   * - [ ] make carousel
-   * - [ ] combine parallax and carousel
+   * - [x] get images
+   * - [x] make parallax
+   * - [x] make carousel
+   * - [x] combine parallax and carousel
 
 2. A collage with popup for more details
     * - [ ] get images for collage
@@ -46,3 +46,8 @@ Go check out the HTML file! Everything you need to know is there!
     * - [ ] implement in the page
     * - [ ] testing
 ---
+#### Nice-to-have features progress
+
+1. - [ ] Chaser AND runner circle are functional
+2. - [x] Lightmode / Darkmode switch
+3. - [ ] Final letter challenge completed!
