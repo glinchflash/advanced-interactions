@@ -134,6 +134,10 @@ document.addEventListener('keypress', (event)=>{
       for (let i=0; i<letter.length; i++)
         if (letter[i].innerText === keyName){
             letter[i].innerText = "";
+        }else  if (keyName === "Enter"){
+            Array.from(document.querySelectorAll(".letter")).forEach(el => {
+                el.innerText = randomLetter();
+            });
         }
 
 })
