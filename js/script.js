@@ -53,7 +53,6 @@ hoverMons.forEach((name) =>{
         sprite.style.left ='0%';
         sprite.style.transform = 'translateY(-100%)';
         sprite.style.height = '300%'
-        if (name.contains(sprite)) return;
         name.appendChild(sprite)
     })
 })
