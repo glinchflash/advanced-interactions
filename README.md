@@ -67,3 +67,16 @@ Go check out the HTML file! Everything you need to know is there!
 
 #### What I've learned
 
+1. a lot is possible with Javascript!
+2. how to use clientWidth/height
+3. how to create elements into the html with javascript (better understanding of this concept)
+4. javascript can be used both to create html elements as css stylings
+5. getElementsByClassname works when using it as an array
+6. how to use query selector
+#### Issues I've came across
+
+1. chaser didn't stay in the box
+   * put the chaser outside of the div box fixes this issue
+2. images work locally but not on githubpages
+   * Github uses different path syntax ("../" should be "./")
+---
