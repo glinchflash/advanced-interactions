@@ -74,22 +74,19 @@ hoverMons.forEach((name) => {
         name.innerHTML = name.innerText;
     })
 })
-//chaser
 
-let chaser = document.getElementById('chaser');
+//chaser
+let box = document.getElementById("chaserBox");
+let chaser = document.querySelector('.chaser');
 
 const onMouseMove = (e) => {
-    if (e.pageX < 1370 && e.pageX > 100) {
-        chaser.style.left = e.pageX + 'px';
-    }
-    if (e.pageY < 2620 && e.pageY > 2325) {
-        chaser.style.top = e.pageY + 'px';
-    }
-
+    chaser.style.left = e.pageX - 25 + 'px';
+    chaser.style.top = e.pageY - 25+ 'px';
 }
 
+box.addEventListener('mousemove', onMouseMove);
 
-document.addEventListener('mousemove', onMouseMove);
+
 
 //random letters
 Array.from(document.querySelectorAll(".letter")).forEach(el => {
