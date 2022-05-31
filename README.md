@@ -47,8 +47,13 @@ Go check out the HTML file! Everything you need to know is there!
 4. Functional chaser or runner circle
     * - [x] write JS for chaser/runner (or both)
       * - [x] chaser
-    * - [x] implement in the page
-    * - [x] testing
+         * - [x] implement in the page
+         * - [x] testing
+      * - [ ] runner
+        * - [ ] implement in the page
+        * - [ ] testing
+    * - [ ] implement in the page 
+    * - [ ] testing 
 ---
 #### Nice-to-have features progress
 

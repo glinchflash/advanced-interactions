@@ -86,17 +86,8 @@ const onMouseMove = (e) => {
 
 box.addEventListener('mousemove', onMouseMove);
 
+//runner
 
-
-//random letters
-Array.from(document.querySelectorAll(".letter")).forEach(el => {
-    el.innerText = randomLetter();
-});
-
-function randomLetter() {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"
-    return alphabet[Math.floor(Math.random() * alphabet.length)]
-}
 
 
 //dark / light mode switch
@@ -109,4 +100,43 @@ btn.addEventListener('click', () => {
         document.body.classList.remove('darkMode');
         document.body.classList.add('lightMode')
     }
+})
+//random letters
+Array.from(document.querySelectorAll(".letter")).forEach(el => {
+    el.innerText = randomLetter();
+});
+
+function randomLetter() {
+    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+    return alphabet[Math.floor(Math.random() * alphabet.length)]
+
+}
+//delete letter pressed on keyboard
+let letterbox = document.getElementById('letterbox');
+let letter = document.querySelectorAll(".letter");
+let randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+document.addEventListener('keypress', (event)=>{
+    let keyName = event.key;
+    console.log(keyName);
+      for (let i=0; i<letter.length; i++)
+        if (letter[i].innerText === keyName){
+            letter[i].innerText = "";
+        }
+
+})
+//change color of letters and background on mouse entering
+letterbox.addEventListener('mouseenter',() =>{
+    letterbox.style.color = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    letterbox.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    letterbox.style.transform = "scale(1.1)";
+})
+
+letterbox.addEventListener('mouseleave', ()=>{
+    letterbox.style.color = "";
+    letterbox.style.backgroundColor = "";
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    letterbox.style.transform = "scale(1)"
 })
