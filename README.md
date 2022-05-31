@@ -59,4 +59,9 @@ Go check out the HTML file! Everything you need to know is there!
 
 1. - [ ] Chaser AND runner circle are functional
 2. - [x] Lightmode / Darkmode switch
-3. - [ ] Final letter challenge completed!
+3. - [x] Final letter challenge completed!
+    * - [x] change text color on entering
+    * - [x] change background color on entering
+    * - [x] enlarge on entering
+    * - [x] delete letters depending on keyboard press
+   
