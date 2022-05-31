@@ -94,8 +94,8 @@ const boxHeight = box.clientHeight -50;
 
 runner.addEventListener('mouseover', runAway)
 function runAway() {
-    let randomWidth = Math.floor(Math.random() * boxWidth) + 1;
-    let randomHeight = Math.floor(Math.random() * boxHeight) + 1;
+    let randomWidth = Math.floor(Math.random() * boxWidth) ;
+    let randomHeight = Math.floor(Math.random() * boxHeight) ;
 
     runner.style.top = `${randomHeight}px`;
     runner.style.left = `${randomWidth}px`;
