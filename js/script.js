@@ -76,15 +76,15 @@ hoverMons.forEach((name) => {
 })
 
 //chaser
-let box = document.getElementById("chaserBox");
-let chaser = document.querySelector('.chaser');
+document.getElementsByClassName("box")[0].addEventListener('mousemove', followMouse);
+let chaser = document.querySelector('.chaser')
 
-const onMouseMove = (e) => {
+function followMouse(e) {
+    chaser.style.visibility = "visible";
     chaser.style.left = e.pageX - 25 + 'px';
     chaser.style.top = e.pageY - 25+ 'px';
 }
 
-box.addEventListener('mousemove', onMouseMove);
 
 //runner
 

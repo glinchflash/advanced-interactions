@@ -43,6 +43,7 @@ p {
     background: red;
     border-radius: 50%;
     position: absolute;
+    visibility: hidden;
 }
 
 .runner{
