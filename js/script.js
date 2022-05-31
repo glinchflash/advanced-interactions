@@ -97,8 +97,8 @@ function runAway() {
     let randomWidth = Math.floor(Math.random() * boxWidth) ;
     let randomHeight = Math.floor(Math.random() * boxHeight) ;
 
-    runner.style.top = `${randomHeight}px`;
-    runner.style.left = `${randomWidth}px`;
+    runner.style.left = `${randomWidth}px`; //both versions work both with + 'px' or just adding px into the backticks
+    runner.style.top = `${randomHeight}` + 'px';
 }
 
 
