@@ -20,7 +20,8 @@ body{
     position: relative;
     top: 35%;
 }
-img{
+
+.collageImg{
     width: 40%;
     height: 40%;
 }

@@ -40,6 +40,7 @@ for (let i = 0; i < collage.length; i++) {
     const img = document.createElement("img");
     let click = false;
     img.src = `./images/collage/${i + 1}.png`;
+    img.className = "collageImg";
     img.addEventListener('click', function () {
         this.style.transform = "scale(1.2)";
         document.getElementById(`${i + 1}`).style.display = "block";
