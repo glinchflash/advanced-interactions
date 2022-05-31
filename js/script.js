@@ -77,7 +77,7 @@ hoverMons.forEach((name) => {
 
 //chaser
 document.getElementsByClassName("box")[0].addEventListener('mousemove', followMouse);
-let chaser = document.querySelector('.chaser')
+let chaser = document.querySelector('.chaser');
 
 function followMouse(e) {
     chaser.style.visibility = "visible";
@@ -87,7 +87,20 @@ function followMouse(e) {
 
 
 //runner
+let box = document.getElementsByClassName('box')[1];
+let runner = document.querySelector('.runner');
+const boxWidth = box.clientWidth - 50;
+const boxHeight = box.clientHeight -50;
 
+
+runner.addEventListener('mouseover', runAway)
+function runAway() {
+    let randomWidth = Math.floor(Math.random() * boxWidth) + 1;
+    let randomHeight = Math.floor(Math.random() * boxHeight) + 1;
+
+    runner.style.top = `${randomHeight}px`;
+    runner.style.left = `${randomWidth}px`;
+}
 
 
 //dark / light mode switch
