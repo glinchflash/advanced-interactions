@@ -63,4 +63,7 @@ Go check out the HTML file! Everything you need to know is there!
     * - [x] change background color on entering
     * - [x] enlarge on entering
     * - [x] delete letters depending on keyboard press
-   
+---
+
+#### What I've learned
+

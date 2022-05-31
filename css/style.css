@@ -20,7 +20,10 @@ body{
     position: relative;
     top: 35%;
 }
-
+img{
+    width: 40%;
+    height: 40%;
+}
 
 .picture{
     padding: 10px;
@@ -107,7 +110,4 @@ p {
 
 .mode:hover{
     cursor: pointer;
-}
-
-#letterbox{
 }

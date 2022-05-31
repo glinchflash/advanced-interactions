@@ -45,7 +45,6 @@ for (let i = 0; i < collage.length; i++) {
         document.getElementById(`${i + 1}`).style.display = "block";
         document.getElementById(`${i + 1}`).style.position = "absolute";
         document.getElementById(`${i + 1}`).style.zIndex = "200";
-        // document.getElementById(`${i+1}`).style.backgroundColor = "black";
         if (!click) {
             this.addEventListener('mouseout', function () {
                 this.style.transform = "scale(1)";
