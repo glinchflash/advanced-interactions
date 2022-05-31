@@ -9,23 +9,13 @@ body{
 
 .poke{
     font-weight: bold;
-}
-.popup {
     position: relative;
-    display: inline-block;
-    cursor: pointer;
 }
 p {
     display: none;
 }
 
 
-
-#pidgeotPopup, #magikarpPopup, #slowpokePopup, #farfetchPopup{
-    display: none;
-    z-index: 200;
-    position: absolute;
-}
 
 .chaser{
     width: 50px;

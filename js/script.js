@@ -43,40 +43,25 @@ for (let i = 0; i < collage.length; i++) {
 }
 
 //hover popups
-
-//pidgeot
-document.getElementById('pidgeot').addEventListener('mouseover', function (){
-    document.querySelector("#pidgeotPopup").style.display = "block";
+const hoverMons = document.querySelectorAll('.poke');
+console.log(hoverMons);
+hoverMons.forEach((name) =>{
+    name.addEventListener('mouseover',()=>{
+        let sprite = new Image();
+        sprite.src = `../images/popups/${name.innerText}.png`;
+        sprite.style.position = 'absolute';
+        sprite.style.left ='0%';
+        sprite.style.transform = 'translateY(-100%)';
+        sprite.style.height = '300%'
+        if (name.contains(sprite)) return;
+        name.appendChild(sprite)
+    })
 })
-
-document.getElementById('pidgeot').addEventListener('mouseleave', function (){
-    document.getElementById('pidgeotPopup').style.display = 'none';
+hoverMons.forEach((name) => {
+    name.addEventListener('mouseleave', () => {
+        name.innerHTML = name.innerText;
+    })
 })
-//magikarp
-document.getElementById('magikarp').addEventListener('mouseover', function (){
-    document.getElementById('magikarpPopup').style.display = "block";
-})
-
-document.getElementById('magikarp').addEventListener('mouseleave', function (){
-    document.getElementById('magikarpPopup').style.display = 'none';
-})
-//slowpoke
-document.getElementById('slowpoke').addEventListener('mouseover', function (){
-    document.getElementById('slowpokePopup').style.display = 'block';
-})
-
-document.getElementById('slowpoke').addEventListener('mouseleave', function (){
-    document.getElementById('slowpokePopup').style.display = 'none';
-})
-//farfetch'd
-document.getElementById('farfetch').addEventListener('mouseover', function (){
-    document.getElementById('farfetchPopup').style.display = 'block';
-})
-
-document.getElementById('farfetch').addEventListener('mouseleave', function (){
-    document.getElementById('farfetchPopup').style.display = 'none';
-})
-
 //chaser
 
 let chaser = document.getElementById('chaser');
@@ -88,7 +73,7 @@ const onMouseMove = (e) => {
    if (e.pageY < 2620 && e.pageY > 2325) {
         chaser.style.top = e.pageY + 'px';
     }
-    console.log(e.pageX);
+
 }
 
 
