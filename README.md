@@ -49,15 +49,14 @@ Go check out the HTML file! Everything you need to know is there!
       * - [x] chaser
          * - [x] implement in the page
          * - [x] testing
-      * - [ ] runner
-        * - [ ] implement in the page
-        * - [ ] testing
-    * - [ ] implement in the page 
-    * - [ ] testing 
+      * - [x] runner
+        * - [x] implement in the page
+        * - [x] testing
+     
 ---
 #### Nice-to-have features progress
 
-1. - [ ] Chaser AND runner circle are functional
+1. - [x] Chaser AND runner circle are functional
 2. - [x] Lightmode / Darkmode switch
 3. - [x] Final letter challenge completed!
     * - [x] change text color on entering
