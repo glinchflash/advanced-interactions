@@ -41,8 +41,8 @@ Go check out the HTML file! Everything you need to know is there!
 
 3. Hover image above every Pokemon in the text
     * - [x] get images for pokemon
-    * - [ ] make hover effect
-    * - [ ] implement images in hover effect
+    * - [x] make hover effect
+    * - [x] implement images in hover effect
 
 4. Functional chaser or runner circle
     * - [x] write JS for chaser/runner (or both)
