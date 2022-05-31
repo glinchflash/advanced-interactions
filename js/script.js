@@ -2,23 +2,38 @@
 let imagesCarousel = ['../images/carousel/umbreon.jpg', '../images/carousel/mewtwo.jpg', '../images/carousel/scizor.jpg', '../images/carousel/starters.jpg'];
 let carousel = document.getElementById('carouselContainer');
 let activeImg = 0;
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+
 // getting the images in
 carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`
 carousel.style.backgroundRepeat = 'no-repeat'
 carousel.style.backgroundSize = 'cover';
 carousel.style.backgroundAttachment = 'fixed';
-setInterval(carouselScroll, 2000)
 
-function carouselScroll() {
+next.addEventListener('click',()=>{
     if (activeImg < imagesCarousel.length - 1) {
         activeImg++
         carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`
-    } else {
+    } else if(activeImg === imagesCarousel.length-1){
         activeImg = 0;
         carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`
-
     }
-}
+
+});
+
+prev.addEventListener('click', ()=>{
+    if (activeImg > 0){
+        activeImg--;
+        carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`;
+    } else {
+        activeImg = imagesCarousel.length-1;
+        carousel.style.backgroundImage = `url(${imagesCarousel[activeImg]})`;
+    }
+
+});
+
+
 
 //collage
 const collage = document.getElementsByClassName("image");

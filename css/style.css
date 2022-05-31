@@ -2,6 +2,26 @@ body{
     padding-bottom: 50px;
 }
 
+.carousel{
+    display: flex;
+    font-size: xxx-large;
+
+}
+.prev{
+    float: left;
+    position: relative;
+    top: 35%;
+    color: red;
+}
+
+.next{
+    float: right;
+    color: red;
+    position: relative;
+    top: 35%;
+}
+
+
 .picture{
     padding: 10px;
 }

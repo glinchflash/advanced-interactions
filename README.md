@@ -32,7 +32,7 @@ Go check out the HTML file! Everything you need to know is there!
    * - [x] make parallax
    * - [x] make carousel
    * - [x] combine parallax and carousel
-   * - [ ] optional: Controls
+   * - [x] optional: Controls
 
 2. - [x]  A collage with popup for more details
     * - [x] get images for collage
