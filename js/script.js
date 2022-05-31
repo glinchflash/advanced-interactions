@@ -126,17 +126,17 @@ document.addEventListener('keypress', (event)=>{
 
 })
 //change color of letters and background on mouse entering
-letterbox.addEventListener('mouseenter',() =>{
+letterbox.addEventListener('mouseenter',() => {
     letterbox.style.color = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    randomColor = Math.floor(Math.random() * 16777215).toString(16);
     letterbox.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    letterbox.style.transform = "scale(1.1)";
-})
+    randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    letterbox.style.transform = "rotate(45deg)";
+});
 
 letterbox.addEventListener('mouseleave', ()=>{
     letterbox.style.color = "";
     letterbox.style.backgroundColor = "";
     randomColor = Math.floor(Math.random()*16777215).toString(16);
-    letterbox.style.transform = "scale(1)"
+    letterbox.style.transform = "rotate(0)"
 })
